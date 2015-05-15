@@ -1,0 +1,17 @@
+
+
+
+Given /^a valid user$/ do
+@user = User.create!({
+	:email => "123@abc.com",
+	:password => "wibble",
+	:name => "abc",
+	:gender => "F",
+	})
+end
+
+Given /the following students exist/ do |students_table| 
+	students_table.hashes.each do |student| 
+		Student.create student
+	end 
+end
