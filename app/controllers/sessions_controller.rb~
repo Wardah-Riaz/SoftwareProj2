@@ -2,6 +2,7 @@ class SessionsController < ApplicationController
   def new
   end
 
+<<<<<<< HEAD
 def home
 end
 
@@ -22,13 +23,19 @@ end
     end
   end
 
+=======
+>>>>>>> e4c4b7b55a2b2997c3549748c074a814ac3a40d3
   def create
     @user = Student.where(:email => params[:session][:email].downcase).where(:password => params[:session][:password]).first
     if @user
       # Log the user in and redirect to the user's show page.
 	session[:user_id] = @user.id
+<<<<<<< HEAD
 	redirect_to @user
 	#format.html {redirect_to @user , notice: "Success. Logged in!"}
+=======
+	format.html {redirect_to @user , notice: "Success. Logged in!"}
+>>>>>>> e4c4b7b55a2b2997c3549748c074a814ac3a40d3
     else
       #flash.now[:danger] = 'Invalid email/password combination'
 	
@@ -41,9 +48,12 @@ end
     @current_user = nil
     redirect_to '/login'    
   end
+<<<<<<< HEAD
   def destroyInstructor
     session.delete(:user_id)
     @current_user = nil
     redirect_to '/login'    
   end
+=======
+>>>>>>> e4c4b7b55a2b2997c3549748c074a814ac3a40d3
 end

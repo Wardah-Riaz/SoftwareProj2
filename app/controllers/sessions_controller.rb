@@ -2,6 +2,7 @@ class SessionsController < ApplicationController
   def new
   end
 
+<<<<<<< HEAD
 def home
 end
 
@@ -22,6 +23,8 @@ end
     end
   end
 
+=======
+>>>>>>> e4c4b7b55a2b2997c3549748c074a814ac3a40d3
   def create
     @user = Student.where(:email => params[:session][:email].downcase).where(:password => params[:session][:password]).first
     if @user
@@ -41,9 +44,12 @@ end
     @current_user = nil
     redirect_to '/login'    
   end
+<<<<<<< HEAD
   def destroyInstructor
     session.delete(:user_id)
     @current_user = nil
     redirect_to '/loginInstructor'    
   end
+=======
+>>>>>>> e4c4b7b55a2b2997c3549748c074a814ac3a40d3
 end

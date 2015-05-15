@@ -2,7 +2,11 @@ class StudentsController < ApplicationController
   # GET /students
   # GET /students.json
 def signup
+<<<<<<< HEAD
 	redirect_to 'students/new'	
+=======
+	
+>>>>>>> e4c4b7b55a2b2997c3549748c074a814ac3a40d3
 end  
 
 def index

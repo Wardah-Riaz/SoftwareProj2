@@ -5,11 +5,15 @@ Feature: student to login in to the system
   I want to login to the website
   So that I can access restricted areas
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e4c4b7b55a2b2997c3549748c074a814ac3a40d3
 Background: students have been added to database
 
   Given the following students exist:
 
+<<<<<<< HEAD
   | email               | password | name   | gender | dob              |
   | Alice_12@gmail.com  | 11111    | Alice  | F      | 23-November-1992 |
   | John44@hotmail.com  | 22222    | John   | M      | 25-October-1992  |
@@ -28,12 +32,19 @@ Scenario: Login
 	Given I am on the home page
 	When I follow "Login as Student"
 	Then I should be on the login page
+=======
+  | email   | password | name | gender |
+  | 123@abc | 11111    | 123  | F      |
+  | 456@abc | 22222    | 456  | M      |
+  | 789@abc | 33333    | 789  | F      |
+>>>>>>> e4c4b7b55a2b2997c3549748c074a814ac3a40d3
 
 #And I am on Login page
 
 Scenario: Login
   Given a valid student
   When I go to the login page
+<<<<<<< HEAD
   And I fill in "Email" with "Alice_12@gmail.com"
     #|email|minikermit@hotmail.com|
   And I fill in "Password" with "11111"
@@ -57,5 +68,13 @@ Scenario: Login
   And I press "Log in"
   Then I go to the instructors page
   And I should see "Full name: M. Harris"
+=======
+  And I fill in "Email" with "ramsha@abc"
+    #|email|minikermit@hotmail.com|
+  And I fill in "Password" with "12345678"
+  And I press "Log in"
+  Then I go to the students page
+  And I should see "Hello"
+>>>>>>> e4c4b7b55a2b2997c3549748c074a814ac3a40d3
 
 

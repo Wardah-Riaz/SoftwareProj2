@@ -1,4 +1,5 @@
 Project::Application.routes.draw do
+<<<<<<< HEAD
   resources :subjects
 
 
@@ -11,6 +12,8 @@ Project::Application.routes.draw do
   resources :discussions
 
 
+=======
+>>>>>>> e4c4b7b55a2b2997c3549748c074a814ac3a40d3
   get "sessions/new"
 
   resources :students
@@ -23,6 +26,7 @@ get '/signup' => 'students#new'
 get 'login' => 'sessions#new'
 post 'login' => 'sessions#create'
 get 'logout' => 'sessions#destroy'
+<<<<<<< HEAD
 get 'home' => 'sessions#home'
 
 get '/signupInstructor' => 'instructor1s#new'
@@ -30,6 +34,8 @@ get '/signupInstructor' => 'instructor1s#new'
 get 'loginInstructor' => 'sessions#newInstructor' #done
 post 'loginInstructor' => 'sessions#createInstructor' #done
 get 'logoutInstructor' => 'sessions#destroyInstructor'
+=======
+>>>>>>> e4c4b7b55a2b2997c3549748c074a814ac3a40d3
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

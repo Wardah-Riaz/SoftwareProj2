@@ -11,7 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20150512170634) do
+=======
+ActiveRecord::Schema.define(:version => 20150427232518) do
+>>>>>>> e4c4b7b55a2b2997c3549748c074a814ac3a40d3
 
   create_table "courses", :force => true do |t|
     t.string   "title"
@@ -20,6 +24,7 @@ ActiveRecord::Schema.define(:version => 20150512170634) do
     t.datetime "updated_at", :null => false
   end
 
+<<<<<<< HEAD
   create_table "discussions", :force => true do |t|
     t.date     "Date"
     t.string   "Name"
@@ -46,6 +51,8 @@ ActiveRecord::Schema.define(:version => 20150512170634) do
     t.datetime "updated_at",       :null => false
   end
 
+=======
+>>>>>>> e4c4b7b55a2b2997c3549748c074a814ac3a40d3
   create_table "students", :force => true do |t|
     t.string   "email"
     t.string   "password"
@@ -56,6 +63,7 @@ ActiveRecord::Schema.define(:version => 20150512170634) do
     t.datetime "updated_at", :null => false
   end
 
+<<<<<<< HEAD
   create_table "users", :force => true do |t|
     t.string   "login",                     :limit => 40
     t.string   "name",                      :limit => 100, :default => ""
@@ -70,4 +78,6 @@ ActiveRecord::Schema.define(:version => 20150512170634) do
 
   add_index "users", ["login"], :name => "index_users_on_login", :unique => true
 
+=======
+>>>>>>> e4c4b7b55a2b2997c3549748c074a814ac3a40d3
 end
